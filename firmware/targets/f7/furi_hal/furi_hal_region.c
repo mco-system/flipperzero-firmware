@@ -84,6 +84,7 @@ void furi_hal_region_init() {
     } else if(region == FuriHalVersionRegionJp) {
         furi_hal_region = &furi_hal_region_jp;
     }
+    furi_hal_region = &furi_hal_region_zero;
 }
 
 const FuriHalRegion* furi_hal_region_get() {
