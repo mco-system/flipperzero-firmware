@@ -19,3 +19,25 @@ $(info |                      or                         |)
 $(info |           https://flipp.dev/2XM8                |)
 $(info |                                                 |)
 $(info +-------------------------------------------------+)
+
+.PHONY: build clean distclean all
+
+distclean:
+	-rm -Rf ./build
+	-rm -Rf ./dist
+	-rm -Rf ./toolchain
+
+clean:
+	-rm -Rf ./build
+	-rm -Rf ./dist
+	. ./scripts/toolchain/fbtenv.sh
+	python3 ./lib/scons/scripts/scons.py --clean
+	-find ./ -type d -name "*__pycache__" -exec rm -Rf {} \;
+	-rm ./.sconsign.dblite
+
+build:
+	./fbt COMPACT=1 DEBUG=0 VERBOSE=1 updater_package copro_dist flash_usb_full
+
+all: | distclean clean build
+
+rebuild: | clean build
