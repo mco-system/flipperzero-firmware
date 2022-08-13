@@ -30,8 +30,7 @@ distclean:
 clean:
 	-rm -Rf ./build
 	-rm -Rf ./dist
-	. ./scripts/toolchain/fbtenv.sh
-	python3 ./lib/scons/scripts/scons.py --clean
+	. ./scripts/toolchain/fbtenv.sh; python3 ./lib/scons/scripts/scons.py --clean
 	-find ./ -type d -name "*__pycache__" -exec rm -Rf {} \;
 	-rm ./.sconsign.dblite
 
