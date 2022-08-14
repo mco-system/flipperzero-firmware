@@ -20,7 +20,7 @@ $(info |           https://flipp.dev/2XM8                |)
 $(info |                                                 |)
 $(info +-------------------------------------------------+)
 
-.PHONY: build clean distclean all
+.PHONY: build flash clean distclean all
 
 distclean:
 	-rm -Rf ./build
@@ -35,8 +35,11 @@ clean:
 	-rm ./.sconsign.dblite
 
 build:
-	./fbt COMPACT=1 DEBUG=0 VERBOSE=1 updater_package copro_dist flash_usb_full
+	./fbt COMPACT=1 DEBUG=0 VERBOSE=1 updater_package copro_dist
 
-all: | distclean clean build
+flash:
+	./fbt COMPACT=1 DEBUG=0 VERBOSE=1 flash_usb_full
+
+all: | distclean clean build flash
 
 rebuild: | clean build
