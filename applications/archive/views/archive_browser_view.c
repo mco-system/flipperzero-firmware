@@ -13,6 +13,7 @@ static const char* ArchiveTabNames[] = {
     [ArchiveTabLFRFID] = "RFID LF",
     [ArchiveTabInfrared] = "Infrared",
     [ArchiveTabBadUsb] = "Bad USB",
+    [ArchiveTabPyRunner] = "Py Runner",
     [ArchiveTabU2f] = "U2F",
     [ArchiveTabBrowser] = "Browser",
 };
@@ -24,6 +25,7 @@ static const Icon* ArchiveItemIcons[] = {
     [ArchiveFileTypeLFRFID] = &I_125_10px,
     [ArchiveFileTypeInfrared] = &I_ir_10px,
     [ArchiveFileTypeBadUsb] = &I_badusb_10px,
+    [ArchiveFileTypePyRunner] = &I_pyrunner_10px,
     [ArchiveFileTypeU2f] = &I_u2f_10px,
     [ArchiveFileTypeUpdateManifest] = &I_update_10px,
     [ArchiveFileTypeFolder] = &I_dir_10px,

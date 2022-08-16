@@ -33,6 +33,7 @@ static const DolphinDeedWeight dolphin_deed_weights[] = {
     {2, DolphinAppIbutton}, // DolphinDeedIbuttonAdd
 
     {3, DolphinAppBadusb}, // DolphinDeedBadUsbPlayScript
+    {3, DolphinAppPyrunner}, // DolphinDeedPyRunnerPlayScript
     {3, DolphinAppU2f}, // DolphinDeedU2fAuthorized
 };
 
@@ -43,6 +44,7 @@ static uint8_t dolphin_deed_limits[] = {
     15, // DolphinAppIr
     15, // DolphinAppIbutton
     15, // DolphinAppBadusb
+    15, // DolphinAppPyrunner
     15, // DolphinAppU2f
 };
 

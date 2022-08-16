@@ -50,6 +50,7 @@ FileBrowserApp* file_browser_app_alloc(char* arg) {
     string_init(app->file_path);
     app->file_browser = file_browser_alloc(app->file_path);
     file_browser_configure(app->file_browser, "*", true, &I_badusb_10px, true);
+    file_browser_configure(app->file_browser, "*", true, &I_pyrunner_10px, true);
 
     view_dispatcher_add_view(
         app->view_dispatcher, FileBrowserAppViewStart, widget_get_view(app->widget));

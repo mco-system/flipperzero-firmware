@@ -1,12 +1,14 @@
 V:0
 T:1660391722
 D:badusb
+D:pyrunner
 D:dolphin
 D:infrared
 D:music_player
 D:nfc
 D:subghz
 D:u2f
+F:7857273530c954a5659bbd23cb0e66ac:84:pyrunner/test.py
 F:1139810f61ec7f8c8fe0398d92578b31:256:badusb/da-DA.kl
 F:13504463372b269bd102c68725921d90:256:badusb/de-CH.kl
 F:f392e25a23f50691b5a37e67845dec76:256:badusb/de-DE.kl

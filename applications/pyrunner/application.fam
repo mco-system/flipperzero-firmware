@@ -1,0 +1,14 @@
+App(
+  appid="py_runner",
+  name="Python Runner",
+  apptype=FlipperAppType.APP,
+  entry_point="py_runner_app",
+  cdefines=["APP_PYRUNNER"],
+  requires=[
+    "gui", 
+    "dialogs",
+  ],
+  stack_size=2 * 1024,
+  icon="A_Plugins_14",
+  order=80,
+)

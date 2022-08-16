@@ -18,6 +18,7 @@ static const char* flipper_app_name[] = {
     [ArchiveFileTypeLFRFID] = "125 kHz RFID",
     [ArchiveFileTypeInfrared] = "Infrared",
     [ArchiveFileTypeBadUsb] = "Bad USB",
+    [ArchiveFileTypePyRunner] = "Py Runner",
     [ArchiveFileTypeU2f] = "U2F",
     [ArchiveFileTypeUpdateManifest] = "UpdaterApp",
 };

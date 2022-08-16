@@ -25,6 +25,7 @@ typedef enum {
     ArchiveTabInfrared,
     ArchiveTabIButton,
     ArchiveTabBadUsb,
+    ArchiveTabPyRunner,
     ArchiveTabU2f,
     ArchiveTabBrowser,
     ArchiveTabTotal,

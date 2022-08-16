@@ -1,0 +1,5 @@
+ADD_SCENE(py_runner, file_select, FileSelect)
+ADD_SCENE(py_runner, work, Work)
+ADD_SCENE(py_runner, error, Error)
+ADD_SCENE(py_runner, config, Config)
+ADD_SCENE(py_runner, config_layout, ConfigLayout)

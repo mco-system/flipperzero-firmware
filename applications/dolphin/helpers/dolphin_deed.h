@@ -13,6 +13,7 @@ typedef enum {
     DolphinAppIr,
     DolphinAppIbutton,
     DolphinAppBadusb,
+    DolphinAppPyrunner,
     DolphinAppU2f,
     DolphinAppMAX,
 } DolphinApp;
@@ -49,6 +50,8 @@ typedef enum {
     DolphinDeedIbuttonAdd,
 
     DolphinDeedBadUsbPlayScript,
+
+    DolphinDeedPyRunnerPlayScript,
 
     DolphinDeedU2fAuthorized,
 

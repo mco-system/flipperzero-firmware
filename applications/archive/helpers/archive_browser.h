@@ -15,6 +15,7 @@ static const char* tab_default_paths[] = {
     [ArchiveTabLFRFID] = ANY_PATH("lfrfid"),
     [ArchiveTabInfrared] = ANY_PATH("infrared"),
     [ArchiveTabBadUsb] = ANY_PATH("badusb"),
+    [ArchiveTabPyRunner] = ANY_PATH("pyrunner"),
     [ArchiveTabU2f] = "/app:u2f",
     [ArchiveTabBrowser] = STORAGE_ANY_PATH_PREFIX,
 };
@@ -26,6 +27,7 @@ static const char* known_ext[] = {
     [ArchiveFileTypeLFRFID] = ".rfid",
     [ArchiveFileTypeInfrared] = ".ir",
     [ArchiveFileTypeBadUsb] = ".txt",
+    [ArchiveFileTypePyRunner] = ".py",
     [ArchiveFileTypeU2f] = "?",
     [ArchiveFileTypeUpdateManifest] = ".fuf",
     [ArchiveFileTypeFolder] = "?",
@@ -40,6 +42,7 @@ static const ArchiveFileTypeEnum known_type[] = {
     [ArchiveTabLFRFID] = ArchiveFileTypeLFRFID,
     [ArchiveTabInfrared] = ArchiveFileTypeInfrared,
     [ArchiveTabBadUsb] = ArchiveFileTypeBadUsb,
+    [ArchiveTabPyRunner] = ArchiveFileTypePyRunner,
     [ArchiveTabU2f] = ArchiveFileTypeU2f,
     [ArchiveTabBrowser] = ArchiveFileTypeUnknown,
 };

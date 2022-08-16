@@ -11,6 +11,7 @@ typedef enum {
     ArchiveFileTypeLFRFID,
     ArchiveFileTypeInfrared,
     ArchiveFileTypeBadUsb,
+    ArchiveFileTypePyRunner,
     ArchiveFileTypeU2f,
     ArchiveFileTypeUpdateManifest,
     ArchiveFileTypeFolder,
